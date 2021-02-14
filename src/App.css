@@ -1,0 +1,21 @@
+.App {
+  border: 2px solid black;
+  margin: 2%;
+}
+.threadContainer {
+  border: 2px solid black;
+  margin: 2%;
+  text-align: center;
+}
+.threadHeader {
+  margin: 0%;
+  height: 67px;
+  width: 100%;
+  line-height: 180%;
+}
+.messageContainer {
+  margin: 0%;
+  text-align: left;
+  border-top: 0.1px solid black;
+  padding: 3%;
+}
