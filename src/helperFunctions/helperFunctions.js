@@ -1,4 +1,5 @@
 import { threads, messages, users } from "../data/feedData";
+// use to sort information from "database" into a useable list
 
 let sortedThreads = [];
 

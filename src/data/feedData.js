@@ -1,3 +1,5 @@
+// fake data for feed
+
 const threads = {
     '01': {
         title: "Great Pizza",
@@ -7,14 +9,14 @@ const threads = {
     '02': {
         title: "Fireworks",
         messages: ['003', '004'],
-        creator: '123',
+        creator: '122',
     },
     '03': {
         title: "Smoothies",
         messages: ['006'],
-        creator: '123',
+        creator: '120',
     }
-}
+};
 
 const messages = {
     '001': {
@@ -58,7 +60,7 @@ const messages = {
     timeStamp: '1995-12-17T03:24:00'
    }
    
-}
+};
 
 const users = {
     '120': {
@@ -81,6 +83,6 @@ const users = {
         name:"Paul Doe",
         
     }
-}
+};
 
 export {threads, messages, users};

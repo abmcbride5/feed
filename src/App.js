@@ -7,9 +7,9 @@ import sortedThreads from './helperFunctions/helperFunctions';
 console.log(sortedThreads);
 
 function Feed() {
+  // feed container, use to display all threads
   return (
     <div className="App">
-      {/* <Thread threads={threads} messages={messages} users={users}/> */}
       {sortedThreads.map((thread) => {return (<Thread title={thread.title} messages={thread.messages} users={users}/>)})}
     </div>
   );
