@@ -1,0 +1,16 @@
+.threadContainer {
+    border: 0.01px solid rgb(241, 240, 240);
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .threadHeader {
+    margin: 0%;
+    height: 67px;
+    width: 100%;
+    line-height: 180%;
+    position: relative;
+    left: -0.09%;
+    text-align: center;
+    border: 0.01px solid rgb(241, 240, 240);
+    background-color: cornflowerblue;
+  }

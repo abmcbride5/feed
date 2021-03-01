@@ -1,21 +1,17 @@
-import { threads, messages, users } from "../data/feedData";
-// use to sort information from "database" into a useable list
+import { threads, messages } from '../data/feedData';
 
-let sortedThreads = [];
+const sortedThreads = [];
 
-for (let key in threads) {
-    let tempthread = {};
-    let messagesList = []
-    tempthread['title'] = threads[key].title;
-    for (let message in threads[key].messages) {
-        let messageinfo = {};
-        messageinfo['body'] = messages[threads[key].messages[message]].messageBody
-        messageinfo['user'] = messages[threads[key].messages[message]].author
-        messagesList.push(messageinfo)
-        console.log(messageinfo);
-    }
-    tempthread['messages'] = messagesList;
-    sortedThreads.push(tempthread);
-}
+Object.values(threads).forEach((thread) => {
+  const tempthread = {};
+  tempthread.title = thread.title;
+  tempthread.messages = [];
+
+  for (let i = 0; i < thread.messages.length; i += 1) {
+    // messagesArray.push(messages[thread.messages[i]]);
+    tempthread.messages.push(messages[thread.messages[i]]);
+  }
+  sortedThreads.push(tempthread);
+});
 
 export default sortedThreads;

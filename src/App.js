@@ -1,18 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import { threads, messages, users } from "./data/feedData";
-import Thread from './components/thread';
-import sortedThreads from './helperFunctions/helperFunctions';
+import React from 'react';
+import './css/App.css';
+import Feed from './components/feed';
 
-console.log(sortedThreads);
-
-function Feed() {
-  // feed container, use to display all threads
+function App() {
   return (
     <div className="App">
-      {sortedThreads.map((thread) => {return (<Thread title={thread.title} messages={thread.messages} users={users}/>)})}
+      <Feed />
     </div>
   );
 }
 
-export default Feed;
+export default App;

@@ -1,15 +1,18 @@
-import react from "react";
-import User from "./user";
+import React from 'react';
+import PropTypes from 'prop-types';
+import User from './user';
+import '../css/message.css';
 
-const Message = (props) => {
-    // message component displays messages along with calling user component
-    // to diplay user with corresponding message.
-    return(
-        <div className="messageContainer">
-        <User user={props.user} users={props.users} />
-        <p>{props.body}</p>
-        </div>
-    );
-}
+const Message = ({ user, body }) => (
+  <div className="messageContainer">
+    <User user={user} />
+    <p>{body}</p>
+  </div>
+);
+
+Message.propTypes = {
+  user: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+};
 
 export default Message;

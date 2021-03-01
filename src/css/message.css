@@ -1,0 +1,12 @@
+.messageContainer {
+    margin: 0%;
+    text-align: left;
+    border: 0.01px solid rgb(241, 240, 240);
+    padding: 6%;
+    /* border-radius: 19%; */
+    /* background-color: rgb(195, 221, 230); */
+    height: 14em;
+    width: 88%;
+    position: relative;
+    left: -0.1%;
+  }
